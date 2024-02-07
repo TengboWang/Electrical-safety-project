@@ -1,0 +1,21 @@
+# train and val datasets (image directory or *.txt file with image paths)
+# train: ../DOTA_YOLO/train_1024_OBB/images/train2020/
+# val: ../DOTA_YOLO/val_1024_OBB/images/train2020/
+
+# train: DOTA_demo_view/dianli_datasets/full_classes/train/images/
+# val: DOTA_demo_view/dianli_datasets/full_classes/train/images/
+train: DOTA_demo_view/dianli_datasets/full_classes/newdataset/images/
+val: DOTA_demo_view/dianli_datasets/full_classes/newdataset/images/
+
+
+
+# number of classes
+nc: 11
+
+# class names
+# names: [ 'plane', 'baseball-diamond', 'bridge', 'ground-track-field', 'small-vehicle', 'large-vehicle', 'ship',
+#          'tennis-court', 'basketball-court', 'storage-tank',  'soccer-ball-field', 'roundabout', 'harbor',
+#          'swimming-pool', 'helicopter', 'container-crane' ]
+# names : ['person','helmet','head','glove','wrongglove','clothes','wrongclothes','operatingbar','powerchecker','badge']
+names : ['person','helmet','head','glove','wrongglove','clothes','wrongclothes','operatingbar','opcar','cover',"basket"]
+# names : ['operatingbar','dummy']

@@ -1,0 +1,12 @@
+# train and val datasets (image directory or *.txt file with image paths)
+# train: ../DOTA_YOLO/train_1024_OBB/images/train2020/
+# val: ../DOTA_YOLO/val_1024_OBB/images/train2020/
+
+train: DOTA_demo_view/images/
+val: DOTA_demo_view/images/
+
+# number of classes
+nc: 2
+
+# class names
+names: [ 'front', 'back']

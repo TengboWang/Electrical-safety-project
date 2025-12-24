@@ -1,44 +1,4 @@
 
-# YOLOv5_Rotate
-YOLOv5 in DOTA_OBB dataset with CSL_label.(Oriented Object Detection)
-
-
-## Datasets and pretrained checkpoint
-* `Datasets` : [DOTA](https://link.zhihu.com/?target=http%3A//captain.whu.edu.cn/DOTAweb/)
-* `Datasets` : [Electrical-safety]-`Not public yet `
-
-* `Pretrained Checkpoint or Demo Files` : 
-    * `train,detect_and_evaluate_demo_files`:  | [Baidu Drive(6666)](https://pan.baidu.com/s/19BGy_UIdk8N-mSjHBMI0QQ). |  [Google Drive](https://drive.google.com/file/d/1MdKTgXQpHFBk_RN9UDSIB42M5e8zQaTP/view?usp=sharing) |
-    * `yolov5x.pt`:  | [Baidu Drive(6666)](https://pan.baidu.com/s/1pH6EGKZiIyGtoqUe3F8eWQ). |  [Google Drive](https://drive.google.com/file/d/1hGPB7iOl3EmB2vfm44xMpHJV8hPufHn2/view?usp=sharing) |
-    * `yolov5l.pt`:  | [Baidu Drive(6666)](https://pan.baidu.com/s/16is2mx879jk9_4RHwcIgKw). |  [Google Drive](https://drive.google.com/file/d/12ljwafulmAP1i9XsaeYvEnIUd18agJcT/view?usp=sharing) |
-    * `yolov5m.pt`:  | [Baidu Drive(6666)](https://pan.baidu.com/s/1ZQoxEB-1mtBAk3A-Rt85-A). |  [Google Drive](https://drive.google.com/file/d/1VSDegIUgTh-fMDIjuwTSQaZ1w5bVx2Vd/view?usp=sharing) |
-    * `yolov5s.pt`:  | [Baidu Drive(6666)](https://pan.baidu.com/s/1jm7ijb0a3LVkg8P2bkmJnw). |  [Google Drive](https://drive.google.com/file/d/1ePo6OM8MbxG8nAkZS_Bt7cmnChSlKBmo/view?usp=sharing) |
-* `The latest YOLOV5 model weights ` : (https://github.com/ultralytics/yolov5).
-## Fuction
-* `train.py`.  Train.
-
-* `detect.py`. Detect and visualize the detection result. Get the detection result txt.
-
-* `evaluation.py`.  Merge the detection result and visualize it. Finally evaluate the detector
-
-
-
-## Installation  (Linux Recommend, Windows not Recommend)
-`1.` Python 3.8 with all requirements.txt dependencies installed, including torch==1.6, opencv-python==4.1.2.30, To install run:
-```
-$   pip install -r requirements.txt
-```
-`2.` Install swig
-```
-$   cd  \.....\yolov5_DOTA_OBB\utils
-$   sudo apt-get install swig
-```
-`3.` Create the c++ extension for python
-```
-$   swig -c++ -python polyiou.i
-$   python setup.py build_ext --inplace
-```
-
 
 ## Usage Example
 `1.` `'Get Dataset' `
